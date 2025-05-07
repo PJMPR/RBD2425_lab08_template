@@ -7,7 +7,7 @@ Ten przewodnik pokaże Ci, jak skonfigurować JetBrains DataGrip, aby połączy�
 ## 📦 Wymagania
 
 - Zainstalowany [DataGrip](https://www.jetbrains.com/datagrip/)
-- Uruchomiony kontener MongoDB (zgodnie z [tym przewodnikiem](./Mongodb%20Docker%20Install.md))
+- Uruchomiony kontener MongoDB (zgodnie z [tym przewodnikiem](./mongo_docker.md))
 - MongoDB słucha na porcie `27017` i ma skonfigurowanego użytkownika `admin` z hasłem `haslo123`
 
 ---
