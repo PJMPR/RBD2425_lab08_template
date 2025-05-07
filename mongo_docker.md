@@ -13,23 +13,16 @@ Poniżej znajduje się przewodnik instalacji i uruchomienia MongoDB w kontenerze
 
 ## 🛠️ Instalacja i uruchomienie
 
-### 1. Utwórz katalog na dane MongoDB (opcjonalne, dla trwałości danych):
+### 1. Uruchom MongoDB z użyciem Dockera:
 
 ```cmd
-mkdir %HOMEPATH%\mongodb\data
-```
-
-### 2. Uruchom MongoDB z użyciem Dockera:
-
-```cmd
-docker run -d --name mongodb -p 27017:27017 -v %HOMEPATH%\mongodb\data:/data/db -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=haslo123 mongo
+docker run -d --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=haslo123 mongo
 ```
 
 📌 **Parametry wyjaśnienie:**
 - `-d` – uruchamia kontener w tle
 - `--name` – nazwa kontenera
 - `-p` – mapowanie portów (lokalny:kontenerowy)
-- `-v` – montowanie woluminu (trwałość danych)
 - `-e` – zmienne środowiskowe dla loginu i hasła
 
 ---
